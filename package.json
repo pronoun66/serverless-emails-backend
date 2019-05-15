@@ -1,0 +1,36 @@
+{
+  "name": "serverless-emails",
+  "version": "1.0.0",
+  "description": "serverless-emails",
+  "repository": "",
+  "author": "Jerry Liao <pronoun66@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "APP_ENV=dev ./node_modules/serverless/bin/serverless offline start",
+    "unit-test": "bash ./scripts/unitTest.sh",
+    "integration-test": "bash ./scripts/integrationTest.sh",
+    "pre-integration-test": "bash ./scripts/startLocal.sh",
+    "lint-fix": "eslint --env node ./src/** ./tests/integration/** ./tests/unit/** --fix"
+  },
+  "pre-commit": [
+    "lint-fix"
+  ],
+  "dependencies": {
+    "ajv": "^6.10.0",
+    "form-data": "^2.3.3",
+    "node-fetch": "^2.5.0",
+    "uuid": "^2.0.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.12.0",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "mocha": "^6.1.4",
+    "serverless": "^1.42.2",
+    "serverless-offline": "^3.33.0",
+    "sinon": "^7.3.2",
+    "supertest": "^4.0.2"
+  }
+}

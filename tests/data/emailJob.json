@@ -1,0 +1,46 @@
+{
+  "Records": [
+    {
+      "eventID": "1",
+      "eventVersion": "1.0",
+      "dynamodb": {
+        "Keys": {
+          "id": {
+            "S": "7f340820-766d-11e9-8525-6d08a7727660"
+          }
+        },
+        "NewImage": {
+          "id": {
+            "S": "7f340820-766d-11e9-8525-6d08a7727660"
+          },
+          "status": {
+            "S": "NEW"
+          },
+          "params": {
+            "M": {
+              "from": {
+                "S": "jerry.liao@reckon.com"
+              },
+              "to": {
+                "S": "pronoun66@gmail.com"
+              },
+              "subject": {
+                "S": "subject"
+              },
+              "content": {
+                "S": "test"
+              }
+            }
+          }
+        },
+        "StreamViewType": "NEW_AND_OLD_IMAGES",
+        "SequenceNumber": "111",
+        "SizeBytes": 26
+      },
+      "awsRegion": "ap-southeast-2",
+      "eventName": "INSERT",
+      "eventSourceARN": "arn:aws:dynamodb:ap-southeast-2:account-id:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899",
+      "eventSource": "aws:dynamodb"
+    }
+  ]
+}

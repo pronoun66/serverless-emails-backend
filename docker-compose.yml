@@ -1,0 +1,24 @@
+version: '3'
+services:
+  api:
+    image: "node:8"
+    user: "node"
+    working_dir: /home/node/app
+    volumes:
+      - ./:/home/node/app
+    ports:
+      - "3000:3000"
+    command: "/home/node/app/node_modules/serverless/bin/serverless offline start --host=0.0.0.0 --stage=local"
+
+  dynamodb:
+    image: 'amazon/dynamodb-local'
+    ports:
+      - "8000:8000"
+    expose:
+      - "8000"
+
+ # used to access host ports from docker
+  dockerhost:
+    image: qoomon/docker-host
+    cap_add: [ 'NET_ADMIN', 'NET_RAW' ]
+    restart: on-failure

@@ -1,0 +1,8 @@
+{
+  "dynamodb": {
+    "accessKeyId": "accessKeyId",
+    "secretAccessKey": "secretAccessKey",
+    "region": "ap-southeast-2",
+    "endpoint": "http://dynamodb:8000"
+  }
+}

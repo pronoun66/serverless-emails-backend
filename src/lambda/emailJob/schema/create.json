@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "json": "body",
+  "properties": {
+    "body": {
+      "type": "object",
+      "properties": {
+        "from": {"type": "string"},
+        "to": {"type": "string"},
+        "subject": {"type": "string"},
+        "content": {"type": "string"}
+      },
+      "required": ["from", "to", "subject", "content"]
+    }
+  },
+  "required": ["body"]
+}

@@ -1,0 +1,10 @@
+{
+  "mailgun": {
+    "auth": "",
+    "url": ""
+  },
+  "sendgrid": {
+    "apikey": "",
+    "url": ""
+  }
+}

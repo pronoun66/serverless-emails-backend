@@ -1,0 +1,4 @@
+module.exports = {
+  AVAILABLE: 'AVAILABLE',
+  UNAVAILABLE: 'UNAVAILABLE',
+};
